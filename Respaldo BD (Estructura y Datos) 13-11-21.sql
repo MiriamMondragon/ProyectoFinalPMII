@@ -67,7 +67,7 @@ CREATE TABLE `bitacora` (
   PRIMARY KEY (`Id_Registro`),
   KEY `FK_Bitacora_Id_Usuario` (`Id_Usuario`),
   CONSTRAINT `FK_Bitacora_Id_Usuario` FOREIGN KEY (`Id_Usuario`) REFERENCES `usuarios` (`Id_Usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=68 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=69 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -76,7 +76,7 @@ CREATE TABLE `bitacora` (
 
 LOCK TABLES `bitacora` WRITE;
 /*!40000 ALTER TABLE `bitacora` DISABLE KEYS */;
-INSERT INTO `bitacora` VALUES (2,1,'Samsung Galaxy Note 4','Android 6','2021-11-06','14:58:43','Inserción de nuevo administrador. Usuario: kpalma: Karol Stephany Palma Ventura'),(3,1,'Samsung Galaxy Note 4','Android 6','2021-11-06','15:06:11','Inserción de nuevo cliente. Usuario: manuelguarda: Manuel Maria Guardiola Espinal'),(4,1,'Samsung Galaxy Note 4','Android 6','2021-11-06','15:30:20','Actualización de cliente. Usuario: manuelguarda: Manuel Maria Guardiola Espinal'),(5,1,'Samsung Galaxy Note 4','Android 6','2021-11-06','15:30:58','Actualización de cliente. Usuario: mguarda: Manuel Marcos Guardiola Espinal'),(6,1,'Samsung Galaxy Note 4','Android 6','2021-11-06','15:38:55',NULL),(7,1,'Samsung Galaxy Note 4','Android 6','2021-11-06','15:40:04',NULL),(8,1,'Samsung Galaxy Note 4','Android 6','2021-11-06','15:44:21',NULL),(9,1,'Samsung Galaxy Note 4','Android 6','2021-11-06','15:45:10','Desactivación de cliente. Usuario: mguarda: Manuel Marcos Guardiola Espinal'),(10,1,'Samsung Galaxy Note 4','Android 6','2021-11-06','15:48:59','Actualización de cliente. Usuario: mguarda: Manuel Marcos Guardiola Espinal'),(11,1,'Samsung Galaxy Note 4','Android 6','2021-11-06','16:11:24','Actualización de administrador. Usuario: kpalma: Karol Stephany Palma Ventura'),(12,1,'Samsung Galaxy Note 4','Android 6','2021-11-06','16:11:43','Actualización de administrador. Usuario: kpalma: Karol Stephany Palma Ventura'),(13,1,'Samsung Galaxy Note 4','Android 6','2021-11-06','16:14:53','Desactivación de administrador. Usuario: kpalma: Karol Stephany Palma Ventura'),(14,1,'Samsung Galaxy Note 4','Android 6','2021-11-06','16:15:11','Actualización de administrador. Usuario: kpalma: Karol Stephany Palma Ventura'),(15,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','13:13:40','Inserción de nuevo descuento: 1: Tercera Edad, con valor de: 0.4000'),(16,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','13:16:38','Actualización de descuento 1: Descuento de Tercera Edad, con nuevo valor de: 0.2000'),(17,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','13:17:09','Actualización de descuento 1: Descuento de Tercera Edad, con nuevo valor de: 0.4000'),(18,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','13:17:33','Actualización de nombre descuento 1: Tercera Edad'),(19,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','13:20:46','Desactivación de descuento 1: Tercera Edad'),(20,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','13:21:12','Actualización de descuento 1: Tercera Edad, con nuevo valor de: 0.4000'),(21,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','13:26:31','Inserción de nuevo impuesto: 1: Bebidas Alcohólicas, con valor de: 0.2000'),(22,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','13:27:38','Actualización de impuesto 1: Bebidas Alcohólicas, con nuevo valor de: 0.5000'),(23,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','13:28:52','Desactivación de impuesto 1: Bebidas Alcohólicas'),(24,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','13:29:03','Actualización de impuesto 1: Bebidas Alcohólicas, con nuevo valor de: 0.5000'),(25,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','13:58:00','Inserción de nuevo proveedor ID 1: Consome y Más'),(26,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','14:07:08','Actualización de proveedor ID 1: Condimentos Co.'),(27,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','14:09:36','Desactivación de proveedor ID 1: Condimentos Co.'),(28,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','14:09:43','Actualización de proveedor ID 1: Condimentos Co.'),(29,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','14:39:44','Inserción de nueva categoría 2: Verduras'),(30,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','14:40:43','Inserción de nueva categoría 1: Verduras'),(31,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','14:42:53','Inserción de nuevo producto: 4: Tomate, con precio de: 20.50'),(32,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','14:44:39','Inserción de nuevo producto: 5: Tomate, con precio de: 20.50'),(33,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','14:45:57','Inserción de nuevo producto: 1: Tomate, con precio de: 20.50'),(34,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','14:49:27','Inserción de nuevo producto: 2: Chile Verde, con precio de: 20.50'),(35,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','14:55:38','Descontinuación de producto 1: Tomate'),(36,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','15:09:38','Actualización de producto 1: Tomate, con nuevo precio de: 22.50'),(37,3,'Samsung Galaxy Note 4','Android 6','2021-11-07','18:51:14','Nueva factura de venta registrada. Usuario: 3'),(38,2,'Samsung Galaxy Note 4','Android 6','2021-11-07','19:07:54','Nueva factura de compra registrada. Usuario: 2'),(39,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','19:18:32','Anulación de factura 1'),(40,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','19:21:57','Anulación de factura 1'),(41,1,'1','1','2021-11-11','13:27:56','Inserción de nuevo administrador. Usuario: 1: 1 1'),(42,1,'','','2021-11-11','14:25:50','Inserción de nuevo administrador. Usuario: mespinal: Marcos Luis Espinal Paz'),(43,1,'','','2021-11-11','14:29:33','Inserción de nuevo administrador. Usuario: mespinal: Marcos Luis Espinal Paz'),(44,1,'','','2021-11-11','14:33:44','Inserción de nuevo administrador. Usuario: mespinal: Marcos Luis Espinal Paz'),(45,1,'','','2021-11-11','14:54:53','Inserción de nuevo administrador. Usuario: mespinal: Marcos Luis Espinal Paz'),(46,1,'','','2021-11-11','14:56:32','Inserción de nuevo administrador. Usuario: mespinal: Marcos Luis Espinal Paz'),(47,1,'Google AOSP on IA Emulator','Android 9','2021-11-11','15:00:47','Inserción de nuevo administrador. Usuario: mespinal: Marcos Luis Espinal Paz'),(48,1,'Google AOSP on IA Emulator','Android 9','2021-11-11','15:35:17','Inserción de nuevo administrador. Usuario: mespinal: Marcos Luis Espinal Paz'),(49,1,'Google AOSP on IA Emulator','Android 9','2021-11-11','16:16:43','Actualización de administrador. Usuario: mespinal: MARIO Luis Espinal Paz'),(50,1,'Google AOSP on IA Emulator','Android 9','2021-11-11','16:28:42','Desactivación de administrador. Usuario: mespinal: MARIO Luis Espinal Paz'),(51,1,'Google AOSP on IA Emulator','Android 9','2021-11-12','10:09:49','Inserción de nuevo cliente. Usuario: mpaula: Maria Paula Castro Paz'),(52,1,'Samsung Galaxy Note 4','Android 6','2021-11-12','10:37:34','Actualización de cliente. Usuario: mguarda: Manuel Marcos Guardiola Espinal'),(53,1,'Google AOSP on IA Emulator','Android 9','2021-11-12','10:50:51','Actualización de cliente. Usuario: mpaula: Mario Paulo Castro Paz'),(54,1,'Google AOSP on IA Emulator','Android 9','2021-11-12','10:57:58','Desactivación de cliente. Usuario: mpaula: Mario Paulo Castro Paz'),(55,1,'Google AOSP on IA Emulator','Android 9','2021-11-12','14:25:35','Inserción de nuevo producto: 3: Corn Flakes, con precio de: 30.00'),(56,1,'Google AOSP on IA Emulator','Android 9','2021-11-12','14:32:14','Inserción de nuevo producto: 4: Carneeeeee, con precio de: 30.00'),(57,1,'Google AOSP on IA Emulator','Android 9','2021-11-12','14:35:41','Inserción de nuevo producto: 5: Carne, con precio de: 30.00'),(58,1,'Google AOSP on IA Emulator','Android 9','2021-11-12','14:37:18','Inserción de nuevo producto: 6: Carne, con precio de: 30.00'),(59,1,'Google AOSP on IA Emulator','Android 9','2021-11-12','14:38:17','Inserción de nuevo producto: 7: Carne, con precio de: 30.00'),(60,1,'Google AOSP on IA Emulator','Android 9','2021-11-12','14:39:42','Inserción de nuevo producto: 8: Carne, con precio de: 30.00'),(61,1,'Google AOSP on IA Emulator','Android 9','2021-11-12','14:40:32','Inserción de nuevo producto: 9: Carne, con precio de: 30.00'),(62,1,'Google AOSP on IA Emulator','Android 9','2021-11-12','14:41:54','Inserción de nuevo producto: 10: Carne, con precio de: 30.00'),(63,1,'Google AOSP on IA Emulator','Android 9','2021-11-12','14:42:51','Inserción de nuevo producto: 11: Carne, con precio de: 30.00'),(64,1,'Google AOSP on IA Emulator','Android 9','2021-11-12','14:44:21','Inserción de nuevo producto: 12: Carne, con precio de: 30.00'),(65,1,'Google AOSP on IA Emulator','Android 9','2021-11-12','14:45:16','Inserción de nuevo producto: 13: Carne, con precio de: 30.00'),(66,1,'Google AOSP on IA Emulator','Android 9','2021-11-12','15:01:21','Actualización de producto 3: Corn Flakes, con nuevo precio de: 10.00'),(67,1,'Google AOSP on IA Emulator','Android 9','2021-11-12','15:10:51','Descontinuación de producto 3: Corn Flakes');
+INSERT INTO `bitacora` VALUES (2,1,'Samsung Galaxy Note 4','Android 6','2021-11-06','14:58:43','Inserción de nuevo administrador. Usuario: kpalma: Karol Stephany Palma Ventura'),(3,1,'Samsung Galaxy Note 4','Android 6','2021-11-06','15:06:11','Inserción de nuevo cliente. Usuario: manuelguarda: Manuel Maria Guardiola Espinal'),(4,1,'Samsung Galaxy Note 4','Android 6','2021-11-06','15:30:20','Actualización de cliente. Usuario: manuelguarda: Manuel Maria Guardiola Espinal'),(5,1,'Samsung Galaxy Note 4','Android 6','2021-11-06','15:30:58','Actualización de cliente. Usuario: mguarda: Manuel Marcos Guardiola Espinal'),(6,1,'Samsung Galaxy Note 4','Android 6','2021-11-06','15:38:55',NULL),(7,1,'Samsung Galaxy Note 4','Android 6','2021-11-06','15:40:04',NULL),(8,1,'Samsung Galaxy Note 4','Android 6','2021-11-06','15:44:21',NULL),(9,1,'Samsung Galaxy Note 4','Android 6','2021-11-06','15:45:10','Desactivación de cliente. Usuario: mguarda: Manuel Marcos Guardiola Espinal'),(10,1,'Samsung Galaxy Note 4','Android 6','2021-11-06','15:48:59','Actualización de cliente. Usuario: mguarda: Manuel Marcos Guardiola Espinal'),(11,1,'Samsung Galaxy Note 4','Android 6','2021-11-06','16:11:24','Actualización de administrador. Usuario: kpalma: Karol Stephany Palma Ventura'),(12,1,'Samsung Galaxy Note 4','Android 6','2021-11-06','16:11:43','Actualización de administrador. Usuario: kpalma: Karol Stephany Palma Ventura'),(13,1,'Samsung Galaxy Note 4','Android 6','2021-11-06','16:14:53','Desactivación de administrador. Usuario: kpalma: Karol Stephany Palma Ventura'),(14,1,'Samsung Galaxy Note 4','Android 6','2021-11-06','16:15:11','Actualización de administrador. Usuario: kpalma: Karol Stephany Palma Ventura'),(15,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','13:13:40','Inserción de nuevo descuento: 1: Tercera Edad, con valor de: 0.4000'),(16,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','13:16:38','Actualización de descuento 1: Descuento de Tercera Edad, con nuevo valor de: 0.2000'),(17,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','13:17:09','Actualización de descuento 1: Descuento de Tercera Edad, con nuevo valor de: 0.4000'),(18,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','13:17:33','Actualización de nombre descuento 1: Tercera Edad'),(19,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','13:20:46','Desactivación de descuento 1: Tercera Edad'),(20,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','13:21:12','Actualización de descuento 1: Tercera Edad, con nuevo valor de: 0.4000'),(21,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','13:26:31','Inserción de nuevo impuesto: 1: Bebidas Alcohólicas, con valor de: 0.2000'),(22,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','13:27:38','Actualización de impuesto 1: Bebidas Alcohólicas, con nuevo valor de: 0.5000'),(23,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','13:28:52','Desactivación de impuesto 1: Bebidas Alcohólicas'),(24,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','13:29:03','Actualización de impuesto 1: Bebidas Alcohólicas, con nuevo valor de: 0.5000'),(25,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','13:58:00','Inserción de nuevo proveedor ID 1: Consome y Más'),(26,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','14:07:08','Actualización de proveedor ID 1: Condimentos Co.'),(27,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','14:09:36','Desactivación de proveedor ID 1: Condimentos Co.'),(28,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','14:09:43','Actualización de proveedor ID 1: Condimentos Co.'),(29,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','14:39:44','Inserción de nueva categoría 2: Verduras'),(30,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','14:40:43','Inserción de nueva categoría 1: Verduras'),(31,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','14:42:53','Inserción de nuevo producto: 4: Tomate, con precio de: 20.50'),(32,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','14:44:39','Inserción de nuevo producto: 5: Tomate, con precio de: 20.50'),(33,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','14:45:57','Inserción de nuevo producto: 1: Tomate, con precio de: 20.50'),(34,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','14:49:27','Inserción de nuevo producto: 2: Chile Verde, con precio de: 20.50'),(35,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','14:55:38','Descontinuación de producto 1: Tomate'),(36,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','15:09:38','Actualización de producto 1: Tomate, con nuevo precio de: 22.50'),(37,3,'Samsung Galaxy Note 4','Android 6','2021-11-07','18:51:14','Nueva factura de venta registrada. Usuario: 3'),(38,2,'Samsung Galaxy Note 4','Android 6','2021-11-07','19:07:54','Nueva factura de compra registrada. Usuario: 2'),(39,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','19:18:32','Anulación de factura 1'),(40,1,'Samsung Galaxy Note 4','Android 6','2021-11-07','19:21:57','Anulación de factura 1'),(41,1,'1','1','2021-11-11','13:27:56','Inserción de nuevo administrador. Usuario: 1: 1 1'),(42,1,'','','2021-11-11','14:25:50','Inserción de nuevo administrador. Usuario: mespinal: Marcos Luis Espinal Paz'),(43,1,'','','2021-11-11','14:29:33','Inserción de nuevo administrador. Usuario: mespinal: Marcos Luis Espinal Paz'),(44,1,'','','2021-11-11','14:33:44','Inserción de nuevo administrador. Usuario: mespinal: Marcos Luis Espinal Paz'),(45,1,'','','2021-11-11','14:54:53','Inserción de nuevo administrador. Usuario: mespinal: Marcos Luis Espinal Paz'),(46,1,'','','2021-11-11','14:56:32','Inserción de nuevo administrador. Usuario: mespinal: Marcos Luis Espinal Paz'),(47,1,'Google AOSP on IA Emulator','Android 9','2021-11-11','15:00:47','Inserción de nuevo administrador. Usuario: mespinal: Marcos Luis Espinal Paz'),(48,1,'Google AOSP on IA Emulator','Android 9','2021-11-11','15:35:17','Inserción de nuevo administrador. Usuario: mespinal: Marcos Luis Espinal Paz'),(49,1,'Google AOSP on IA Emulator','Android 9','2021-11-11','16:16:43','Actualización de administrador. Usuario: mespinal: MARIO Luis Espinal Paz'),(50,1,'Google AOSP on IA Emulator','Android 9','2021-11-11','16:28:42','Desactivación de administrador. Usuario: mespinal: MARIO Luis Espinal Paz'),(51,1,'Google AOSP on IA Emulator','Android 9','2021-11-12','10:09:49','Inserción de nuevo cliente. Usuario: mpaula: Maria Paula Castro Paz'),(52,1,'Samsung Galaxy Note 4','Android 6','2021-11-12','10:37:34','Actualización de cliente. Usuario: mguarda: Manuel Marcos Guardiola Espinal'),(53,1,'Google AOSP on IA Emulator','Android 9','2021-11-12','10:50:51','Actualización de cliente. Usuario: mpaula: Mario Paulo Castro Paz'),(54,1,'Google AOSP on IA Emulator','Android 9','2021-11-12','10:57:58','Desactivación de cliente. Usuario: mpaula: Mario Paulo Castro Paz'),(55,1,'Google AOSP on IA Emulator','Android 9','2021-11-12','14:25:35','Inserción de nuevo producto: 3: Corn Flakes, con precio de: 30.00'),(56,1,'Google AOSP on IA Emulator','Android 9','2021-11-12','14:32:14','Inserción de nuevo producto: 4: Carneeeeee, con precio de: 30.00'),(57,1,'Google AOSP on IA Emulator','Android 9','2021-11-12','14:35:41','Inserción de nuevo producto: 5: Carne, con precio de: 30.00'),(58,1,'Google AOSP on IA Emulator','Android 9','2021-11-12','14:37:18','Inserción de nuevo producto: 6: Carne, con precio de: 30.00'),(59,1,'Google AOSP on IA Emulator','Android 9','2021-11-12','14:38:17','Inserción de nuevo producto: 7: Carne, con precio de: 30.00'),(60,1,'Google AOSP on IA Emulator','Android 9','2021-11-12','14:39:42','Inserción de nuevo producto: 8: Carne, con precio de: 30.00'),(61,1,'Google AOSP on IA Emulator','Android 9','2021-11-12','14:40:32','Inserción de nuevo producto: 9: Carne, con precio de: 30.00'),(62,1,'Google AOSP on IA Emulator','Android 9','2021-11-12','14:41:54','Inserción de nuevo producto: 10: Carne, con precio de: 30.00'),(63,1,'Google AOSP on IA Emulator','Android 9','2021-11-12','14:42:51','Inserción de nuevo producto: 11: Carne, con precio de: 30.00'),(64,1,'Google AOSP on IA Emulator','Android 9','2021-11-12','14:44:21','Inserción de nuevo producto: 12: Carne, con precio de: 30.00'),(65,1,'Google AOSP on IA Emulator','Android 9','2021-11-12','14:45:16','Inserción de nuevo producto: 13: Carne, con precio de: 30.00'),(66,1,'Google AOSP on IA Emulator','Android 9','2021-11-12','15:01:21','Actualización de producto 3: Corn Flakes, con nuevo precio de: 10.00'),(67,1,'Google AOSP on IA Emulator','Android 9','2021-11-12','15:10:51','Descontinuación de producto 3: Corn Flakes'),(68,1,'Samsung Galaxy Note 4','Android 6','2021-11-13','11:26:31','Actualización de administrador. Usuario: mmondragon: Miriam Ariel Mondragón Espinoza');
 /*!40000 ALTER TABLE `bitacora` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -629,7 +629,7 @@ CREATE TABLE `usuarios` (
 
 LOCK TABLES `usuarios` WRITE;
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
-INSERT INTO `usuarios` VALUES (1,'mmondragon','miriamdragon927@gmail.com','12345','8cb2237d0679ca88db6464eac60da96345513964',1,1,'2021-11-06 14:56:42','2021-11-06 14:56:42'),(2,'kpalma','karolpalma@gmail.com','54321','348162101fc6f7e624681b7400b085eeac6df7bd',1,1,'2021-11-06 14:58:43','2021-11-06 16:15:11'),(3,'mguarda','manuelmaria@gmail.com','12345','8cb2237d0679ca88db6464eac60da96345513964',2,1,'2021-11-06 15:06:11','2021-11-06 15:48:59'),(4,'1','1','1','356a192b7913b04c54574d18c28d46e6395428ab',1,1,'2021-11-11 13:27:56','2021-11-11 13:27:56'),(11,'mespinal','marcos@gmail.com','12345','8cb2237d0679ca88db6464eac60da96345513964',1,0,'2021-11-11 15:35:17','2021-11-11 16:28:42'),(12,'mpaula','correo@gmail.com','12345','8cb2237d0679ca88db6464eac60da96345513964',2,0,'2021-11-12 10:09:49','2021-11-12 10:57:58');
+INSERT INTO `usuarios` VALUES (1,'mmondragon','miriamdragon927@gmail.com','12345','c573fa2036976e8c9e9b5ced550f7c5f5c22c82a8cb2237d0679ca88db6464eac60da96345513964',1,1,'2021-11-06 14:56:42','2021-11-13 11:26:31'),(2,'kpalma','karolpalma@gmail.com','54321','e71e6164a3ae0113b167d7f9cf3f339e5b2ec36d',1,1,'2021-11-06 14:58:43','2021-11-13 11:30:18'),(3,'mguarda','manuelmaria@gmail.com','12345','f547325323e903d34c92b084da55e51e683083e3',2,1,'2021-11-06 15:06:11','2021-11-13 11:35:14'),(4,'1','1','1','356a192b7913b04c54574d18c28d46e6395428ab',1,0,'2021-11-11 13:27:56','2021-11-13 11:30:18'),(11,'mespinal','marcos@gmail.com','12345','8cb2237d0679ca88db6464eac60da96345513964',1,0,'2021-11-11 15:35:17','2021-11-11 16:28:42'),(12,'mpaula','correo@gmail.com','12345','8cb2237d0679ca88db6464eac60da96345513964',2,0,'2021-11-12 10:09:49','2021-11-12 10:57:58');
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -710,6 +710,19 @@ SET character_set_client = utf8;
  1 AS `Apellidos`,
  1 AS `Usuario`,
  1 AS `Estado`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary view structure for view `v_llenarproveedores`
+--
+
+DROP TABLE IF EXISTS `v_llenarproveedores`;
+/*!50001 DROP VIEW IF EXISTS `v_llenarproveedores`*/;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+/*!50001 CREATE VIEW `v_llenarproveedores` AS SELECT 
+ 1 AS `Id_Proveedor`,
+ 1 AS `Nombre`*/;
 SET character_set_client = @saved_cs_client;
 
 --
@@ -1312,7 +1325,7 @@ BEGIN
 			START TRANSACTION;
 			
 			INSERT INTO `Usuarios` (`Usuario`, `Correo`, `Clave`, `Token`, `Id_Rol`) 
-			VALUES (P_USUARIO, P_CORREO, P_CLAVE, (SELECT SHA1(P_CLAVE)), 1);
+			VALUES (P_USUARIO, P_CORREO, P_CLAVE, CONCAT((SELECT SHA1(P_USUARIO)), (SELECT SHA1(P_CLAVE))), 1);
 			
             INSERT INTO `Administradores` (`Identificacion`, `Nombres`, `Apellidos`, `Telefono`, `Fecha_Nacimiento`, `Id_Usuario`)
 			VALUES(varIdentificacion, varNombres, varApellidos, varTelefono, varFechaNacimiento, (SELECT MAX(Id_Usuario) FROM Usuarios));
@@ -1443,7 +1456,7 @@ BEGIN
 			START TRANSACTION;
 			
 			INSERT INTO `Usuarios` (`Usuario`, `Correo`, `Clave`, `Token`, `Id_Rol`) 
-			VALUES (P_USUARIO, P_CORREO, P_CLAVE, (SELECT SHA1(P_CLAVE)), 2);
+			VALUES (P_USUARIO, P_CORREO, P_CLAVE, CONCAT((SELECT SHA1(P_USUARIO)), (SELECT SHA1(P_CLAVE))), 2);
 			
             INSERT INTO `Clientes` (`Identificacion`, `Nombres`, `Apellidos`, `Telefono`, `Fecha_Nacimiento`, `Direccion`, `Latitud`, `Longitud`, `Id_Usuario`)
 			VALUES(varIdentificacion, varNombres, varApellidos, varTelefono, varFechaNacimiento, varDireccion, varLatitud, varLongitud, (SELECT MAX(Id_Usuario) FROM Usuarios));
@@ -1946,6 +1959,71 @@ DELIMITER ;
 /*!50003 SET character_set_client  = @saved_cs_client */ ;
 /*!50003 SET character_set_results = @saved_cs_results */ ;
 /*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `LOGIN` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `LOGIN`(
+    IN P_USUARIO VARCHAR(120),
+    IN P_CLAVE VARCHAR(100)
+)
+BEGIN
+    IF (SELECT COUNT(*) FROM Usuarios WHERE Usuario = P_USUARIO AND Clave = P_CLAVE AND Estado = 1) = 1 THEN
+        
+        SELECT Token FROM Usuarios WHERE Usuario = P_USUARIO;
+        
+    ELSE
+        SELECT 'SESION NO INICIADA' AS 'Token';
+    END IF;
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `revisarToken` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `revisarToken`(
+    IN P_TOKEN TEXT
+)
+BEGIN
+    IF (SELECT COUNT(*) FROM Usuarios WHERE Token = P_TOKEN AND Estado = 1) = 1 THEN
+        
+        IF (SELECT Id_Rol FROM Usuarios WHERE Token = P_TOKEN) = 1 THEN
+			-- ADMINISTRADORES
+			SELECT U.Id_Usuario, U.Usuario, U.Id_Rol, A.Id_Admin AS ID
+			FROM Usuarios AS U INNER JOIN Administradores AS A ON A.Id_Usuario = U.Id_Usuario
+			WHERE U.Token = P_TOKEN;
+        ELSE
+        	-- CLIENTES
+			SELECT U.Id_Usuario, U.Usuario, U.Id_Rol, A.Id_Cliente AS ID
+			FROM Usuarios AS U INNER JOIN Clientes AS A ON A.Id_Usuario = U.Id_Usuario
+			WHERE U.Token = P_TOKEN;
+		END IF ;
+        
+    ELSE
+        SELECT 'SESION NO INICIADA' AS 'Id_Usuario';
+    END IF;
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
 /*!50003 DROP PROCEDURE IF EXISTS `Update_Administrador` */;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
 /*!50003 SET @saved_cs_results     = @@character_set_results */ ;
@@ -1998,7 +2076,7 @@ BEGIN
 			SET `Usuario` = P_USUARIO,
             `Correo` = P_CORREO,
 			`Clave` = P_CLAVE,
-			`Token` = (SELECT SHA1(P_CLAVE)),
+			`Token` = CONCAT((SELECT SHA1(P_USUARIO)), (SELECT SHA1(P_CLAVE))),
             `Estado` = P_ESTADO
 			WHERE `Id_Usuario` = V_USUARIOID;
 			
@@ -2109,7 +2187,7 @@ BEGIN
 			SET `Usuario` = P_USUARIO,
             `Correo` = P_CORREO,
 			`Clave` = P_CLAVE,
-			`Token` = (SELECT SHA1(P_CLAVE)),
+			`Token` = CONCAT((SELECT SHA1(P_USUARIO)), (SELECT SHA1(P_CLAVE))),
             `Estado` = P_ESTADO
 			WHERE `Id_Usuario` = V_USUARIOID;
 			
@@ -2440,6 +2518,24 @@ DELIMITER ;
 /*!50001 SET collation_connection      = @saved_col_connection */;
 
 --
+-- Final view structure for view `v_llenarproveedores`
+--
+
+/*!50001 DROP VIEW IF EXISTS `v_llenarproveedores`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8 */;
+/*!50001 SET character_set_results     = utf8 */;
+/*!50001 SET collation_connection      = utf8_general_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `v_llenarproveedores` AS select `proveedores`.`Id_Proveedor` AS `Id_Proveedor`,`proveedores`.`Nombre` AS `Nombre` from `proveedores` where (`proveedores`.`Estado` = 1) order by `proveedores`.`Id_Proveedor` */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
 -- Final view structure for view `v_productos`
 --
 
@@ -2466,4 +2562,4 @@ DELIMITER ;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-11-12 17:42:11
+-- Dump completed on 2021-11-13 17:04:22
