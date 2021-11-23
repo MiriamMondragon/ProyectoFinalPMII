@@ -733,6 +733,20 @@ SET character_set_client = utf8;
 SET character_set_client = @saved_cs_client;
 
 --
+-- Temporary view structure for view `v_descuento`
+--
+
+DROP TABLE IF EXISTS `v_descuento`;
+/*!50001 DROP VIEW IF EXISTS `v_descuento`*/;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+/*!50001 CREATE VIEW `v_descuento` AS SELECT 
+ 1 AS `Id_Descuento`,
+ 1 AS `Nombre_Descuento`,
+ 1 AS `Valor_Descuento`*/;
+SET character_set_client = @saved_cs_client;
+
+--
 -- Temporary view structure for view `v_detalles_facturados_compras`
 --
 
@@ -893,6 +907,24 @@ SET character_set_client = utf8;
  1 AS `Id_Impuesto`,
  1 AS `Nombre_Impuesto`,
  1 AS `Porcentaje_Impuesto`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary view structure for view `v_proveedores`
+--
+
+DROP TABLE IF EXISTS `v_proveedores`;
+/*!50001 DROP VIEW IF EXISTS `v_proveedores`*/;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+/*!50001 CREATE VIEW `v_proveedores` AS SELECT 
+ 1 AS `Id_Proveedor`,
+ 1 AS `Nombre`,
+ 1 AS `Contacto`,
+ 1 AS `Telefono`,
+ 1 AS `Correo`,
+ 1 AS `Direccion`,
+ 1 AS `Estado`*/;
 SET character_set_client = @saved_cs_client;
 
 --
@@ -2130,7 +2162,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `Insert_Proveedor`(
     IN varSistemaOperativo varchar(50)
 )
 BEGIN
-		IF varNombre = '' || varNombre = NULL || varContacto = '' || varContacto = NULL || varLatitud = 0 || varLatitud = NULL || varLongitud = 0 || varLongitud = NULL THEN
+		IF varNombre = '' || varNombre = NULL || varContacto = '' || varContacto = NULL || varLatitud = NULL || varLongitud = NULL THEN
 			SELECT 'LOS PARAMETROS NO PUEDEN SER NULOS - NO INSERTADO EN PROVEEDORES' AS 'ERROR';
 		 ELSE
 			INSERT INTO Proveedores (`Nombre`, `Contacto`, `Telefono`, `Correo`, `Direccion`, `Latitud`, `Longitud`)
@@ -2610,7 +2642,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `Update_Proveedor`(
 )
 BEGIN
 		IF varIdProveedor = NULL || varIdProveedor = '' || varNombre = '' || varNombre = NULL || 
-			varContacto = '' || varContacto = NULL || varLatitud = 0 || varLatitud = NULL || varLongitud = 0 || varLongitud = NULL THEN
+			varContacto = '' || varContacto = NULL || varLatitud = NULL || varLongitud = NULL THEN
 			SELECT 'LOS PARAMETROS NO PUEDEN SER NULOS - NO ACTUALIZADO EN PROVEEDORES' AS 'ERROR';
 		ELSE
 			UPDATE Proveedores
@@ -2720,6 +2752,24 @@ DELIMITER ;
 /*!50001 CREATE ALGORITHM=UNDEFINED */
 /*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
 /*!50001 VIEW `v_clientes` AS select `c`.`Id_Cliente` AS `Id_Cliente`,`c`.`Nombres` AS `Nombres`,`c`.`Apellidos` AS `Apellidos`,`u`.`Usuario` AS `Usuario`,`u`.`Estado` AS `Estado` from (`clientes` `c` join `usuarios` `u` on((`c`.`Id_Usuario` = `u`.`Id_Usuario`))) order by `c`.`Id_Cliente` */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `v_descuento`
+--
+
+/*!50001 DROP VIEW IF EXISTS `v_descuento`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8 */;
+/*!50001 SET character_set_results     = utf8 */;
+/*!50001 SET collation_connection      = utf8_general_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `v_descuento` AS select `d`.`Id_Descuento` AS `Id_Descuento`,`d`.`Nombre_Descuento` AS `Nombre_Descuento`,`hpd`.`Valor_Descuento` AS `Valor_Descuento` from (`descuentos` `d` join `historico_precios_descuentos` `hpd` on((`d`.`Id_Descuento` = `hpd`.`Id_Descuento`))) where isnull(`hpd`.`Fecha_Fin`) order by `d`.`Id_Descuento` */;
 /*!50001 SET character_set_client      = @saved_cs_client */;
 /*!50001 SET character_set_results     = @saved_cs_results */;
 /*!50001 SET collation_connection      = @saved_col_connection */;
@@ -2885,6 +2935,24 @@ DELIMITER ;
 /*!50001 SET character_set_client      = @saved_cs_client */;
 /*!50001 SET character_set_results     = @saved_cs_results */;
 /*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `v_proveedores`
+--
+
+/*!50001 DROP VIEW IF EXISTS `v_proveedores`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8 */;
+/*!50001 SET character_set_results     = utf8 */;
+/*!50001 SET collation_connection      = utf8_general_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `v_proveedores` AS select `proveedores`.`Id_Proveedor` AS `Id_Proveedor`,`proveedores`.`Nombre` AS `Nombre`,`proveedores`.`Contacto` AS `Contacto`,`proveedores`.`Telefono` AS `Telefono`,`proveedores`.`Correo` AS `Correo`,`proveedores`.`Direccion` AS `Direccion`,`proveedores`.`Estado` AS `Estado` from `proveedores` order by `proveedores`.`Id_Proveedor` */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -2895,4 +2963,4 @@ DELIMITER ;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-11-23 14:21:33
+-- Dump completed on 2021-11-23 15:47:51
